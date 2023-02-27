@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "title": "one",
+      "price": "1",
+      "description": "oneProduct",
+      "image": "https://static.cdnlogo.com/logos/i/47/img.svg",
+      "id": 3
+    },
+    {
+      "title": "two",
+      "price": "2",
+      "description": "twoProduct",
+      "image": "https://static.cdnlogo.com/logos/i/47/img.svg",
+      "id": 4
+    },
+    {
+      "title": "three",
+      "price": "3",
+      "description": "threeProduct",
+      "image": "https://static.cdnlogo.com/logos/i/47/img.svg",
+      "id": 5
+    },
+    {
+      "title": "four",
+      "price": "4",
+      "description": "fourProduct",
+      "image": "https://static.cdnlogo.com/logos/i/47/img.svg",
+      "id": 6
+    }
+  ]
+}

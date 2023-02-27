@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(73, 70, 70);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Navbar</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <form class="d-flex flex-column w-100 align-items-center mt-5" id="add-form">
+        <h2 style="color:white;">Admin panel</h2>
+        <input type="text" class="mb-2 w-50 form-control inp" placeholder="title" id="title">
+        <input type="text" class="mb-2 w-50 form-control inp" placeholder="price" id="price">
+        <input type="text" class="mb-2 w-50 form-control inp" placeholder="description" id="description">
+        <input type="text" class="mb-2 w-50 form-control inp" placeholder="image URL" id="image">
+
+        <button class="btn btn-dark w-50" style="color: white;">Add product</button>
+      </form>
+
+      <div id="products-list"  class="d-flex flex-wrap justify-content-center"> </div>
+
+      <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column w-100 align-items-center admin">
+              <h2>Edit product</h2>
+              <input
+                type="text"
+                id="edit-title"
+                class="mb-2 w-100 form-control inp"
+                placeholder="edit title"
+              />
+              <input
+                type="text"
+                id="edit-price"
+                class="mb-2 w-100 form-control inp"
+                placeholder="edit price"
+              />
+              <input
+                type="text"
+                id="edit-description"
+                class="mb-2 w-100 form-control inp"
+                placeholder="edit description"
+              />
+              <input
+                type="text"
+                id="edit-image"
+                class="mb-2 w-100 form-control inp"
+                placeholder="edit image URL"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-primary"
+              id="btn-save-edit"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
