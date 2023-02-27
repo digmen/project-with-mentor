@@ -156,3 +156,5 @@ searchInput.addEventListener('input', () => {
   searchVal = searchInput.value;
   getProducts();
 });
+
+console.log('new branch');
